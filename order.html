@@ -1,0 +1,16 @@
+<!-- templates/order.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Lollipop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>🍭 Place Your Sweet Order</h2>
+    <form action="/place-order" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="text" name="item" placeholder="Lollipop Flavor" required><br>
+        <button type="submit">🚀 Order Now</button>
+    </form>
+</body>
+</html>
